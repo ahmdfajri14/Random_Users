@@ -1,0 +1,39 @@
+/* for desktop display */
+@media (min-width: 769px){
+    .cardCustom{
+        text-align: center;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 10px;
+        width: 350px;
+        height: 80%;
+        display: inline-block;
+    }
+    
+    .responsiveContainer{
+        height: 80vh !important;
+        overflow-x: auto;
+        white-space: nowrap;
+        overflow-y: hidden;
+        width: auto;
+    }
+}
+
+/* for mobile display */
+@media (max-width: 768px){
+    .cardCustom{
+        text-align: center;
+        padding: 20px;
+        margin: 30px auto;
+        border-radius: 10px;
+        width: 350px;
+        height: auto;
+        display: block;
+    }
+    
+    .responsiveContainer{
+        height: auto;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+}

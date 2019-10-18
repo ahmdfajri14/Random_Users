@@ -1,20 +1,27 @@
-import React, {Component} from 'react'
-import { Container, Row, Col, Button, ButtonToolbar } from 'react-bootstrap'
+import React, {Component} from 'react';
+import "./Head.css";
 
 class Head extends Component{
     render(){
+        const {sort} = this.props;
         return(
-            <Row>
-    <Col sm={8}>
-    <h1 style={{color:'white', marginLeft:'30px'}}>Qoala</h1>
-    </Col>
-    <Col sm={4}>
-    <ButtonToolbar style={{marginTop:'10px'}}>
-                    <Button variant="light" style={{marginRight:'10px'}}>Color</Button>
-                    <Button variant="light">Cities</Button>
-                </ButtonToolbar>
-    </Col>
-  </Row>
+            <header>
+                <div>
+                    <div className="titlee">
+                        <h1>Qoala</h1>
+                    </div>
+
+                    <div className="buttons">
+                        <button className="smallbutton" onClick={() => {
+            sort('color')
+        }}>Sort by Color</button>
+                        <button className="smallbutton" onClick={() => {
+            sort('cities')
+        }}>Sort by Cities</button>
+
+                    </div> 
+                </div>
+            </header>
         )
     }
 }
