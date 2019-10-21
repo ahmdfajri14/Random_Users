@@ -1,5 +1,4 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Head from './component/Head'
 import Card from './component/Card'
 
